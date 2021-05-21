@@ -1,0 +1,40 @@
+<html>
+  <head>
+     <title>ContectBook</title>
+     <link href="css/style.css" rel="stylesheet">
+     <script src="js/new.js"></script>
+  </head>
+
+  <body>
+    <!-- the sign in page -->
+    <div class="sign_in_div" id="sign_in" style="display:inline-block">
+      <div class="form_div" style="float:left">
+        <h1>Sign In</h1>
+        <input type="text" id="sign_in_name" placeholder="username" /><br />
+        <input type="password" id="sign_in_password" placeholder="password"/><br />
+        <button type="button" id="sign_in_button" class="bottom_buttons" onclick="doSignIn();"> Sign in </button>
+      </div>
+      <div class="slider_div" style="float:right" >
+        <h2>New here?</h2>
+        <p>Sign up and discover great amount of new opportunities!</p>
+        <button type="button" class='bnt' id = 'sign_up_slider' onclick="showSignUp()"> Sign up </button>
+      </div>
+    </div>
+
+    <!-- the sign up page -->
+    <div class="sign_up_div" id="sign_up" style="display:none">
+      <div class="form_div" style="float:right;">
+        <h1>Sign Up</h1>
+        <input type="text" id="sign_up_name" placeholder="username" /><br />
+        <input type="password" id="sign_up_Password" placeholder="password" /><br />
+        <input type="email" id="sign_up_email" placeholder="email"/><br />
+        <button type="button" id="sign_up_button" class="bottom_buttons" onclick="doSignUp();"> Sign up </button>
+      </div>
+      <div class="slider_div" style="float:left;">
+        <h2>One of us?</h2>
+        <p>If you already has an account, just sign in. We've missed you!</p>
+        <button type="button" class="bnt" id = 'sign_in_slider' onclick="showSignIn()"> Sign in </button>
+      </div>
+    </div>
+  </body>
+</html>
